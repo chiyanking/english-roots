@@ -4,8 +4,9 @@ requirement
 step
     virtualenv --no-site-packages venv
     source venv/bin/activate
-    pip install -r requirements.txt
-    
+    pip install -r requirements.txt 
+    # pip freeze > requirements.txt
+
 deploy to server 
     docker build -t  harbor.daishub.com/kangaroo/kangaroo-gh:latest .
     docker push harbor.daishub.com/kangaroo/kangaroo-gh:latest
